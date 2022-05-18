@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="3_tienda.xsl" type="text/xsl"?>
+
+<tienda>
+             
+    <title>Tienda Online</title>
+    <encabezado>Bienvenid@s a mi tienda</encabezado>
+    <descripcion>Esto es una tienda online que vende productos a través de internet</descripcion>
+    
+    <productos>
+        <producto>
+            <titulo>Patatas</titulo>
+            <descripcion>Son patatas</descripcion>
+            <precio>5€</precio>
+        </producto>
+
+        <producto>
+            <titulo>Pan</titulo>
+            <descripcion>Es pan</descripcion>
+            <precio>1€</precio>
+        </producto>
+
+        <producto>
+            <titulo>Cebollas</titulo>
+            <descripcion>Son cebollas</descripcion>
+            <precio>4€</precio>
+        </producto>
+
+        <producto>
+            <titulo>Ajos</titulo>
+            <descripcion>Son ajos</descripcion>
+            <precio>2€</precio>
+        </producto>
+    </productos>
+</tienda>

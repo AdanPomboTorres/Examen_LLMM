@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#reloj{
+    border: 3px solid black;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.manecillas{
+    height: 200px;
+}
+
+#segundos{
+   background-color: rgb(96, 93, 93); 
+   width: 3px;
+   margin:190px;
+   animation: giroReloj 6s linear infinite;
+}
+
+#minutos{
+    background-color: rgb(96, 93, 93); 
+    width: 3px;
+    animation: giroReloj 6s linear infinite;
+ }
+
+ #horas{
+    background-color: rgb(96, 93, 93); 
+    width: 3px;
+    animation: giroReloj 6s linear infinite;
+ }
+
+@keyframes giroReloj {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+

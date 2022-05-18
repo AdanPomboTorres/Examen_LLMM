@@ -1,0 +1,88 @@
+body{
+    background-color: bisque;
+}
+
+.polaroid{
+    min-height: 100px;
+    max-width: 200px;
+    margin: 12px;
+    border: 3px solid black;
+    text-align:center;
+    line-height: 200px;
+}
+
+#contenedor-padre{
+    display: grid;
+    grid-template-columns: repeat(4. 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 180px;
+    padding-left: 80px;
+}
+
+#contenedor-padre:hover{
+    transform: scale(1.01);
+    
+}
+
+
+.foto-1{
+    animation: cambioColor 1.5s linear infinite;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+}
+
+.foto-2{
+    animation: cambioColor 2.5s linear infinite;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+}
+
+.foto-3{
+    animation: cambioColor 3.5s linear infinite;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.foto-4{
+    animation: cambioColor 4.5s linear infinite;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+
+
+.polaroid:nth-child(odd){
+   transform: rotate(25deg);
+}
+
+.polaroid:nth-child(even){
+    transform: rotate(10deg);
+}
+
+
+@keyframes cambioColor {
+    0%{
+        background-color: red;;
+    }
+
+
+    25%{
+        background-color: orange;
+    }
+
+    50%{
+        background-color: yellow;
+    }
+
+    75%{
+        background-color: green;
+    }
+     
+    100%{
+        background-color: blue;
+    }
+}
+
+
